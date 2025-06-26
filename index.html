@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Busca - Dados Pessoais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resultados de Busca por Cidade</h1>
+            <p class="subtitle">Dados Pessoais - Atualizado automaticamente a cada 10 segundos</p>
+        </header>
+
+        <main>
+            <div class="search-info">
+                <p>Exibindo resultados para: <strong id="city-name">São Paulo</strong></p>
+                <p class="update-time">Última atualização: <span id="last-update"></span></p>
+            </div>
+
+            <div class="table-container">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Os dados serão inseridos aqui via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="loading" id="loading">
+                <p>Carregando dados...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
